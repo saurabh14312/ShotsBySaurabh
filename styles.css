@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #10164a, #121969);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 4px solid #0F52BA;
+    animation: bounce 2s infinite;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a i {
+    color: white;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    background-color: #ff6f61;
+    transform: scale(1.1);
+}
+
+/* Colors for Social Icons */
+.social-links a:nth-child(1) { background: #E1306C; } /* Instagram */
+.social-links a:nth-child(2) { background: #3b5998; } /* Facebook */
+.social-links a:nth-child(3) { background: #fffc00; color: black; } /* Snapchat */
+.social-links a:nth-child(4) { background: #D44638; } /* Email */
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
