@@ -71,7 +71,7 @@ body {
 /* Colors for Social Icons */
 .social-links a:nth-child(1) { background: #E1306C; } /* Instagram */
 .social-links a:nth-child(2) { background: #3b5998; } /* Facebook */
-.social-links a:nth-child(3) { background: #fffc00; color: black; } /* Snapchat */
+.social-links a:nth-child(3) { background: #f5f220; color: black; } /* Snapchat */
 .social-links a:nth-child(4) { background: #D44638; } /* Email */
 
 /* Animations */
